@@ -1,0 +1,41 @@
+version: "3"
+services:
+    web:
+        build:
+            context: ./web
+            dockerfile: Dockerfile
+        ports:
+            - "80:80"
+        depends_on:
+            - db
+        volumes:
+            - ./src:/var/www/html
+        networks:
+            - www
+    db:
+        build:
+            context: ./db
+            dockerfile: Dockerfile
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: docker
+            MYSQL_DATABASE: www
+            MYSQL_USER: docker
+            MYSQL_PASSWORD: docker
+        volumes:
+            - ./data:/var/lib/mysql
+        networks:
+            - www
+    adminer:
+        image: adminer
+        ports:
+            - "8080:8080"
+        depends_on:
+            - db
+        networks:
+            - www
+networks:
+    www:
+volumes:
+    data:
