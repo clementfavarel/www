@@ -7,7 +7,7 @@ Site web type questionnaire d'orientation porté sur le [BUT MMI](https://format
 ## Installation
 
 ```bash
-git clone
+git clone git@github.com:clementfavarel/www.git
 ```
 
 ## Usage
