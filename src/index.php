@@ -2,4 +2,4 @@
 require_once('controller/Controller.php');
 
 $controller = new Controller();
-$controller->handleRequest();
+$controller->invoke();
