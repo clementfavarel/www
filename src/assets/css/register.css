@@ -1,0 +1,62 @@
+body {
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 380px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+.logo {
+    width: 200px;
+    object-fit: cover;
+}
+form {
+    width: 100%;
+}
+.input-group {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+.input-group label {
+    text-indent: 10px;
+    font-weight: 500;
+}
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+.btn {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: #f4f4f4;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #0d82d2;
+    border-radius: 10px;
+    background-color: #0d82d2;
+    font-weight: 500;
+}
+.btn:hover {
+    color: #0d6ac2;
+    background-color: #f4f4f4;
+}
