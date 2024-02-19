@@ -15,8 +15,8 @@
         <h1>Décline ton identité</h1>
         <form action="index.php/?page=register" method="post">
             <div class="input-group">
-                <label for="username">Nom d'utilisateur</label>
-                <input type="text" name="username" id="username" required />
+                <label for="pseudo">Nom d'utilisateur</label>
+                <input type="text" name="pseudo" id="pseudo" required />
             </div>
             <div class="input-group">
                 <label for="email">Adresse email</label>
